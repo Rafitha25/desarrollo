@@ -47,6 +47,7 @@
 		3E2AB0511DB8556400F2AD1B /* PruebaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PruebaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E2AB0551DB8556400F2AD1B /* PruebaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PruebaUITests.swift; sourceTree = "<group>"; };
 		3E2AB0571DB8556400F2AD1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E2AB0631DB85AE900F2AD1B /* Prueba.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Prueba.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +98,7 @@
 		3E2AB0341DB8556400F2AD1B /* Prueba */ = {
 			isa = PBXGroup;
 			children = (
+				3E2AB0631DB85AE900F2AD1B /* Prueba.entitlements */,
 				3E2AB0351DB8556400F2AD1B /* AppDelegate.swift */,
 				3E2AB0371DB8556400F2AD1B /* ViewController.swift */,
 				3E2AB0391DB8556400F2AD1B /* Main.storyboard */,
@@ -195,6 +197,17 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 6J4DCHCN4K;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.Siri = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					3E2AB0451DB8556400F2AD1B = {
 						CreatedOnToolsVersion = 8.0;
@@ -413,6 +426,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Prueba/Prueba.entitlements;
 				DEVELOPMENT_TEAM = 6J4DCHCN4K;
 				INFOPLIST_FILE = Prueba/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -426,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Prueba/Prueba.entitlements;
 				DEVELOPMENT_TEAM = 6J4DCHCN4K;
 				INFOPLIST_FILE = Prueba/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -512,6 +527,7 @@
 				3E2AB05C1DB8556400F2AD1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3E2AB05D1DB8556400F2AD1B /* Build configuration list for PBXNativeTarget "PruebaTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +536,7 @@
 				3E2AB05F1DB8556400F2AD1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3E2AB0601DB8556400F2AD1B /* Build configuration list for PBXNativeTarget "PruebaUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +545,7 @@
 				3E2AB0621DB8556400F2AD1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
